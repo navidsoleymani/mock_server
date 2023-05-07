@@ -11,7 +11,7 @@ async def retrieve(slug: str):
     return {
         "id": 1,
         "title": "عنوان تستی",
-        "slug": "testslug",
+        "slug": slug,
         "seo_description": "seoDescription",
         "seo_og_image": "http://127.0.0.1:8000/dsb-media/report1401ogimages/download.jpeg",
         "title_color_code": "12",
