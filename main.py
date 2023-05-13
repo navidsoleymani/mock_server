@@ -14,7 +14,7 @@ app.add_middleware(
     allow_methods=["*"],
     allow_headers=["*"],
 )
-app.mount("/dsb-media", StaticFiles(directory="dsb-media"), name="statics")
+app.mount("/dsb-media", StaticFiles(directory="mediafiles"), name="statics")
 
 
 @app.get('/')
