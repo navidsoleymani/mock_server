@@ -7,6 +7,7 @@ app = FastAPI()
 
 app.mount("/dsb-media", StaticFiles(directory="dsb-media"), name="statics")
 
+
 @app.get('/')
 async def hello():
     return {'welcomeMessage': 'Wellcome!'}
